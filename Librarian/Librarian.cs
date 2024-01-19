@@ -30,12 +30,14 @@ namespace Librarian
         public string GetRootDirectory()
         {
             // path to downloads folder Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
-            string rootDirectory = "C:\\Users\\Logan\\OneDrive\\Documents\\Librarian\\Librarian\\Librarian\\root\\";
+            string rootDirectory = "C:\\Users\\Logan\\OneDrive\\Documents\\Librarian\\Librarian\\Librarian\\root\\"; // LPC
+            rootDirectory = "C:\\Users\\Logan\\Documents\\GitHub\\Librarian\\Librarian\\root"; // LLC 
             return rootDirectory;
         }
         public string GetResultsDirectory()
         {
-            string resultsDirectory = "C:\\Users\\Logan\\OneDrive\\Documents\\Librarian\\Librarian\\Librarian\\results\\";
+            string resultsDirectory = "C:\\Users\\Logan\\OneDrive\\Documents\\Librarian\\Librarian\\Librarian\\results\\"; // LPC
+            resultsDirectory = "C:\\Users\\Logan\\Documents\\GitHub\\Librarian\\Librarian\\results"; // LLC
             return resultsDirectory;
         }
         public List<StorageItem> GetContentsFromRootDirectory()
